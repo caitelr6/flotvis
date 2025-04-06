@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flotvis — YouTube Канал</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(-45deg, #1e3a8a, #0f172a, #1e40af, #1e293b);
+      background-size: 600% 600%;
+      animation: gradientBG 15s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body class="text-white font-sans">
+
+  <!-- Header -->
+  <header class="p-6">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-bold text-blue-300">Flotvis</h1>
+      <nav class="space-x-4">
+        <a href="#video" class="hover:text-blue-400">Видео</a>
+        <a href="#contacts" class="hover:text-blue-400">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20">
+    <h2 class="text-5xl font-extrabold mb-4">Добро пожаловать на канал Flotvis свами nozim!</h2>
+    <p class="text-xl text-gray-300">Гайды, приколы и крутые игровые видео — смотри, подписывайся!</p>
+  </section>
+
+  <!-- Video Section -->
+  <section id="video" class="py-16 max-w-4xl mx-auto px-4 text-center">
+    <h3 class="text-3xl font-bold text-blue-300 mb-8">Новое видео на канале</h3>
+    <div class="aspect-video w-full max-w-3xl mx-auto rounded-xl overflow-hidden shadow-lg">
+      <iframe class="w-full h-full" src="https://www.youtube.com/embed/Kp0B4zlr3n8" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Contacts Section -->
+  <section id="contacts" class="text-center py-16">
+    <h3 class="text-3xl font-bold text-blue-300 mb-4">Контакты и соцсети</h3>
+    <p class="text-gray-300 mb-4">Следи за новыми видео и будь в теме!</p>
+    <div class="flex justify-center gap-6 text-xl">
+      <a href="https://www.youtube.com/channel/UCDW3iJ_MCBSQEQDFXqQ4MOQ" class="hover:text-red-500" target="_blank">YouTube</a>
+      <a href="https://t.me/flotvis" class="hover:text-blue-400" target="_blank">Telegram</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-gray-400">
+    © 2025 Flotvis. Все права защищены.
+  </footer>
+</body>
+</html>
